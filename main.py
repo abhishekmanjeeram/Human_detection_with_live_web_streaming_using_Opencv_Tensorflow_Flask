@@ -4,7 +4,7 @@ import cv2
 app = Flask(__name__)
 cap = cv2.VideoCapture(0)
 
-configfile = "ssd_mobilenet_v3_large_coco_2020_01_14.pbtxt"
+configfile = "ssd_mobilenet_v3_large_coco.pbtxt"
 frozen_model = "frozen_inference_graph.pb"
 model = cv2.dnn_DetectionModel(frozen_model, configfile)
 Class_labels = []
