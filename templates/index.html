@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Drone app for disater management</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            background-color: rgb(0, 10, 33);
+        }
+        header{
+            width: 100%;
+            padding: 10px;
+            margin: 0%;
+            background-color: rgb(4, 74, 195);
+            color: white;
+            font-size: 25px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+        footer{
+            width: 100%;
+            margin: 0%;
+            padding: 10px;
+            background-color: rgb(4, 74, 195);
+            color: white;
+            font-size: 20px;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        h4
+        {
+            margin: 0;
+        }
+        #livevideo
+        {
+            width: 40%;
+            border-radius: 20px;
+            height: auto;
+            padding: 10px;
+            display: flexbox;
+        }
+        .control
+        {
+            display: flex;
+            padding: 10px;
+            margin: 15px;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .callbutton, .dropbutton
+        {
+            background-color: rgb(8, 156, 8);
+            padding: 10px;
+            border-color: transparent;
+            padding-left: 60px;
+            padding-right: 60px;
+            border-radius: 5px;
+            color: white;
+            font-size: 20px;
+        }
+        .dropbutton
+        {
+            background-color: rgb(192, 88, 13);
+        }
+    </style>
+</head>
+<body>
+    <header>Disaster Management Drone App</header>
+    <div class="content">
+        <img src="{{url_for('video')}}" id="livevideo" > 
+        <div class="param">
+            <div class="location"></div>
+            <div class="battery"></div>
+        </div>
+    </div>
+    <!-- <div class="control">
+        <div class="call"><button class="callbutton">Call</button></div>
+        <div class="drop"><button class="dropbutton">Drop</button></div>
+    </div> -->
+    <footer>
+        <h4>Site designed and developed by @Abhishekmanjeeram</h4>
+        <h4>Published in Github | 2023</h4>
+
+    </footer>
+</body>
+</html>
