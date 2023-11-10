@@ -9,7 +9,7 @@ Before running the code in your system, make sure you have the following install
 ### Note
 The code doesn't explicitly use TensorFlow. However, it indirectly relies on TensorFlow as the SSD MobileNet V3 model is typically trained and exported using TensorFlow. So running the code without properly installing TensorFlow might give you error messages.
 ## Getting started
-1. Download the frozen inference graph.pb [here](frozen_inference_graph.pb) and put in the same folder where the main.py is saved.
+1. Download the frozen inference graph.pb [here]([frozen_inference_graph.pb](https://github.com/Aditya-Manoj/ObjectDetector/blob/main/frozen_inference_graph.pb)) and put in the same folder where the main.py is saved.
 2. Download the all the files or clone this repository.
 3. Run main.py
 4. Open your web browser and go to http://127.0.0.1:5000/ to view the human detection in local web servor.
